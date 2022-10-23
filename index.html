@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calender</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        /* ADD THIS TO YOUR STYLE SHEET */
+        .days ul{
+            list-style: none;
+            display: grid;
+            font-size: .7rem;
+            grid-template-columns:30px 30px 30px 40px 30px 30px 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .day ul {
+            list-style: none;
+            display: grid;
+            font-size: .7rem;
+            grid-template-columns:30px 30px 30px 40px 30px 30px 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+        .days ul li{
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .day ul li{
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #calendar{
+            background-color: #FFFFFF;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .year-date{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin: 10px 0;
+        }
+        .year-btn button{
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .today{
+            background-color: antiquewhite;
+            border-radius: 50%;
+        }
+        .selected-day{
+            background-color: blueviolet;
+            border-radius: 50%;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- iNPUT THIS WHERE YOU WANT YOUR CALENDER TO APPEAR -->
+    <div id="calendar"></div>
+    <script src="calender.js"></script>
+</body>
+</html>
